@@ -1,33 +1,38 @@
 package study;
 
 /*
-ÁÖ¾îÁø ¼ýÀÚ Áß 3°³ÀÇ ¼ö¸¦ ´õÇßÀ» ¶§ ¼Ò¼ö°¡ µÇ´Â °æ¿ìÀÇ °³¼ö¸¦ ±¸ÇÏ·Á°í ÇÕ´Ï´Ù. 
-¼ýÀÚµéÀÌ µé¾îÀÖ´Â ¹è¿­ nums°¡ ¸Å°³º¯¼ö·Î ÁÖ¾îÁú ¶§, 
-nums¿¡ ÀÖ´Â ¼ýÀÚµé Áß ¼­·Î ´Ù¸¥ 3°³¸¦ °ñ¶ó ´õÇßÀ» ¶§ ¼Ò¼ö°¡ µÇ´Â °æ¿ìÀÇ °³¼ö¸¦ return ÇÏµµ·Ï solution ÇÔ¼ö¸¦ ¿Ï¼ºÇØÁÖ¼¼¿ä.
+ì£¼ì–´ì§„ ìˆ«ìž ì¤‘ 3ê°œì˜ ìˆ˜ë¥¼ ë”í–ˆì„ ë•Œ ì†Œìˆ˜ê°€ ë˜ëŠ” ê²½ìš°ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ë ¤ê³  í•©ë‹ˆë‹¤. 
+ìˆ«ìžë“¤ì´ ë“¤ì–´ìžˆëŠ” ë°°ì—´ numsê°€ ë§¤ê°œë³€ìˆ˜ë¡œ ì£¼ì–´ì§ˆ ë•Œ, 
+numsì— ìžˆëŠ” ìˆ«ìžë“¤ ì¤‘ ì„œë¡œ ë‹¤ë¥¸ 3ê°œë¥¼ ê³¨ë¼ ë”í–ˆì„ ë•Œ ì†Œìˆ˜ê°€ ë˜ëŠ” ê²½ìš°ì˜ ê°œìˆ˜ë¥¼ return í•˜ë„ë¡ solution í•¨ìˆ˜ë¥¼ ì™„ì„±í•´ì£¼ì„¸ìš”.
 
-Á¦ÇÑ»çÇ×
-nums¿¡ µé¾îÀÖ´Â ¼ýÀÚÀÇ °³¼ö´Â 3°³ ÀÌ»ó 50°³ ÀÌÇÏÀÔ´Ï´Ù.
-numsÀÇ °¢ ¿ø¼Ò´Â 1 ÀÌ»ó 1,000 ÀÌÇÏÀÇ ÀÚ¿¬¼öÀÌ¸ç, Áßº¹µÈ ¼ýÀÚ°¡ µé¾îÀÖÁö ¾Ê½À´Ï´Ù.
+ì œí•œì‚¬í•­
+numsì— ë“¤ì–´ìžˆëŠ” ìˆ«ìžì˜ ê°œìˆ˜ëŠ” 3ê°œ ì´ìƒ 50ê°œ ì´í•˜ìž…ë‹ˆë‹¤.
+numsì˜ ê° ì›ì†ŒëŠ” 1 ì´ìƒ 1,000 ì´í•˜ì˜ ìžì—°ìˆ˜ì´ë©°, ì¤‘ë³µëœ ìˆ«ìžê°€ ë“¤ì–´ìžˆì§€ ì•ŠìŠµë‹ˆë‹¤.
  */
 
 public class prime01 {
-	// ¼Ò¼öÀÎÁö È®ÀÎ
+	// ì†Œìˆ˜ì¸ì§€ í™•ì¸
 	public boolean check(int n) {
         for (int i = 2; i*i <= n; i++) {
-            if (n % i == 0) return false;
+		if (n % i == 0) {
+			return false;
+		}
         }
         return true;
-    }
+    	}
+
     
-	// ¸ðµç °æ¿ìÀÇ ¼ö
-    public int solution(int[] nums) {
+	// ëª¨ë“  ê²½ìš°ì˜ ìˆ˜
+	public int solution(int[] nums) {
         int answer = 0;
 
         for (int i = 0; i < nums.length; i++) {
             for (int j = i+1; j < nums.length; j++) {
                 for (int k = j+1; k < nums.length; k++) {
                     int sum = nums[i] + nums[j] + nums[k];
-                    if (check(sum)) answer++;
+                    if (check(sum)) {
+			    answer++;
+		    }
                 }
             }
         }
