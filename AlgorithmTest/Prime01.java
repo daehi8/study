@@ -10,7 +10,7 @@ nums에 들어있는 숫자의 개수는 3개 이상 50개 이하입니다.
 nums의 각 원소는 1 이상 1,000 이하의 자연수이며, 중복된 숫자가 들어있지 않습니다.
  */
 
-public class prime01 {
+public class Prime01 {
 	// 소수인지 확인
 	public boolean check(int n) {
         for (int i = 2; i*i <= n; i++) {
