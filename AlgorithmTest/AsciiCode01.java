@@ -13,7 +13,7 @@ s의 길이는 8000이하입니다.
 n은 1 이상, 25이하인 자연수입니다.
 */
 
-class asciiCode01 {
+class AsciiCode01 {
     public String solution(String s, int n) {
         char[] array = s.toCharArray();
         String result = "";
