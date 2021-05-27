@@ -6,7 +6,7 @@ package study;
 //	재한사항
 //	s는 길이가 1 이상, 100이하인 스트링입니다.
 
-public class substring01 {	
+public class Substring01 {	
     public String solution(String s) {
         String answer = "";
         int length = s.length();
