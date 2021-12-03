@@ -16,7 +16,7 @@ n	return
 118372	873211
 */
 
-public class Araay03 {
+public class Array03 {
 	public long solution(long n) {
         long answer = 0;
         String i = String.valueOf(n); 
