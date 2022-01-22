@@ -2,7 +2,7 @@
 
 ### 객체의 생성과 파괴
 
-[01. 생성자 대신 정적 팩터리 메서드(Static Factory Method)를 고려하라](/Effective-Java/객체의-생성과-파괴/Item01.md)
+[01. 생성자 대신 정적 팩터리 메서드(Static Factory Method)를 고려하라](/Effective Java/객체의 생성과 파괴/Item01.md)
 
 [02. 생성자에 매개변수가 많다면 빌더를 고려하라.](/Effective-Java/객체의-생성과-파괴/Item02.md)
 
