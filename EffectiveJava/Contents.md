@@ -28,3 +28,5 @@
 
 [12. toString을 항상 재정의하라](/EffectiveJava/모든_객체의_공통_메서드/Item12.md)
 
+[13. clone 재정의는 주의해서 진행하라](/EffectiveJava/모든_객체의_공통_메서드/Item13.md)
+
