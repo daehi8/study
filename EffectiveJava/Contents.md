@@ -30,3 +30,9 @@
 
 [13. clone 재정의는 주의해서 진행하라](/EffectiveJava/모든_객체의_공통_메서드/Item13.md)
 
+[14. Comparable을 구현할지 고려하라](/EffectiveJava/모든_객체의_공통_메서드/Item14.md)
+
+### 클래스와 인터페이스
+
+[15.클래스와 멤버의 접근 권한을 최소화 하라](/EffectiveJava/클래스와_인터페이스/Item15.md)
+
