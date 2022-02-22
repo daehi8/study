@@ -40,3 +40,4 @@
 
 [17. 변경 가능성을 최소화하라](/EffectiveJava/클래스와_인터페이스/Item17.md)
 
+[18. 상속보다는 컴포지션을 사용하라](/EffectiveJava/클래스와_인터페이스/Item18.md)
